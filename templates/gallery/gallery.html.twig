@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gallery | Portfolio{% endblock %}
+
+{% block body %}
+{% include '_partials/_header.html.twig' %}
+<div class="container my-5">
+    <div class="row g-4"> <!-- g-4 adds gutters/spacing between columns -->
+        <!-- Left column - larger images -->
+        <div class="col-12 col-md-7">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/img3.jpg') }}" class="img-fluid w-100 h-auto" alt="Portfolio 1">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/IzzyAndI2.jpg') }}" class="img-fluid w-100 h-auto" alt="Portfolio 2">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/LeatherJacketPic.jpg') }}" class="img-fluid w-100 h-auto" alt="Portfolio 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right column - smaller images -->
+        <div class="col-12 col-md-5">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/purplejacket.jpg') }}" class="img-fluid w-100 h-auto" alt="Portfolio 3">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/img5.jpg') }}" class="img-fluid w-100 h-auto" alt="Portfolio 4">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/img4.webp') }}" class="img-fluid w-100 h-auto" alt="Portfolio 5">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/LeatherJacketPic2.webp') }}" class="img-fluid w-100 h-auto" alt="Portfolio 5">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="portfolio-item">
+                        <img src="{{ asset('Photos-001/Evisu.jpg') }}" class="img-fluid w-100 h-auto" alt="Portfolio 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

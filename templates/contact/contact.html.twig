@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block title %}Contact | Portfolio{% endblock %}
+{% block body %}
+    {% include '_partials/_header.html.twig' %}
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-card d-flex flex-column justify-content-center">
+                        <h2 class="contact-header text-center">Get in Touch</h2>
+
+                        <div class="contact-info text-center">
+                            <p>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:silvestrefernandez777@gmail.com">silvestrefernandez777@gmail.com</a>
+                            </p>
+
+                            <p>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+64225343249">+64 22 534 3249</a>
+                            </p>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/silvestrefernande.z" target="_blank" class="social-icon instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/vessibop" target="_blank" class="social-icon twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/silvestre-fernandez-1aaa0a2a9/" target="_blank" class="social-icon linkedin">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
